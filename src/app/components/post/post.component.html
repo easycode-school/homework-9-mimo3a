@@ -1,0 +1,9 @@
+<ul>
+  <li>
+    <span>{{ post.id }}</span>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+    <button (click)='editPost()'>EDIT</button>
+    <button *ngIf="isEditPost" (click)="cancelEditPost">CANCEL</button>
+  </li>
+</ul> 
