@@ -1,16 +1,16 @@
 <h2>Basic Pipe</h2>
-<p>{{ myDate | date: format }}</p>
-<button (click)="cangeDateFormat()">Change date format</button>
+<p>{{ myDate | timeSet }}</p>
+<!-- <button (click)="cangeDateFormat()">Change date format</button>
 
 <h2>Many pipes</h2>
-<p>{{ myDate | date: format | uppercase}}</p>
+<p>{{ myDate | date: format | uppercase}}</p> -->
 
-<h2>My castom pipe</h2>
-<p>{{ mynum | multiplyTen: 100 }}</p>
-
+<!-- <h2>My castom pipe</h2>
+<p>{{ mynum | multiplyTen: 100 }}</p> -->
+<!-- 
 <h2>My castom pipe with *ngFor</h2>
-<button (click)="changeSingleObject()">Change Kola</button>
-<ul *ngFor = "let user of (users | sortByAgeLine : 'down')">
+<button (click)="changeSingleObject()">Change Kola</button> -->
+<ul *ngFor = "let user of (users | sortByAgeLine : 'age': 'up')">
     <li>{{ user.name }}</li>
     <li>{{ user.age }}</li>
 </ul>

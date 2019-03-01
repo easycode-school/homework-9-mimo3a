@@ -10,6 +10,7 @@ import { PipeExampleComponent } from './components/pipe-example/pipe-example.com
 import { MultiplyTenPipe } from './pipes/multiply-ten.pipe';
 import { SortByAgePipe } from './pipes/sort-by-age.pipe';
 import { SortByAgeLinePipe } from './pipes/sort-by-age-line.pipe';
+import { TimeSetPipe } from './pipes/time-set.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SortByAgeLinePipe } from './pipes/sort-by-age-line.pipe';
     PipeExampleComponent,
     MultiplyTenPipe,
     SortByAgePipe,
-    SortByAgeLinePipe
+    SortByAgeLinePipe,
+    TimeSetPipe
   ],
   imports: [
     BrowserModule,
